@@ -84,7 +84,6 @@ CREATE TABLE IF NOT EXISTS Published (
 CREATE TABLE IF NOT EXISTS Belong (
 	mid INT NOT NULL,
 	sid INT NOT NULL,
-	time INT NOT NULL,
 	FOREIGN KEY (mid) REFERENCES Messages(id),
 	FOREIGN KEY (sid) REFERENCES Subcategories(id)
 );
@@ -92,7 +91,6 @@ CREATE TABLE IF NOT EXISTS Belong (
 CREATE TABLE IF NOT EXISTS Belonged (
 	mid INT NOT NULL,
 	sid INT NOT NULL,
-	time INT NOT NULL,
 	FOREIGN KEY (mid) REFERENCES Archive(id),
 	FOREIGN KEY (sid) REFERENCES Subcategories(id)
 );
