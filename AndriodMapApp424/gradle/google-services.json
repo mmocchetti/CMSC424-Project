@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "727824411307",
+    "firebase_url": "https://involuted-ratio-178015.firebaseio.com",
+    "project_id": "involuted-ratio-178015",
+    "storage_bucket": "involuted-ratio-178015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727824411307:android:9afb3ca869ac2af9",
+        "android_client_info": {
+          "package_name": "com.kaungthanttest.andriodmapapp424"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727824411307-0n8idvin350nfr10m1jmmnnv9d39tj6n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaungthanttest.andriodmapapp424",
+            "certificate_hash": "eb8ece5d34580a288f0724d6618c0b25ec19bc4b"
+          }
+        },
+        {
+          "client_id": "727824411307-lo0hecf7c2e0u8b1ilrtk4vnd4rcct0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmnXTFdaAxZl9RXP3iOp7wacV8F6oPDkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727824411307-lo0hecf7c2e0u8b1ilrtk4vnd4rcct0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

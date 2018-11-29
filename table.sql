@@ -45,15 +45,16 @@ CREATE TABLE IF NOT EXISTS Archive (
 	PRIMARY KEY(id)
 );
 
-CREATE TABLE IF NOT EXISTS Vertification (
-	uid INT NOT NULL,
-	time INT NOT NULL,
-	FOREIGN KEY(uid) REFERENCES Users(id)
+CREATE TABLE IF NOT EXISTS Verification (
+	email VARCHAR(255) NOT NULL,
+	hash VARCHAR(255) NOT NULL,
+	sent_time BIGINT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Subscription (
 	uid INT NOT NULL,
 	sid INT NOT NULL,
+	PRIMARY KEY(uid, sid),
 	FOREIGN KEY (uid) REFERENCES Users(id),
 	FOREIGN KEY (sid) REFERENCES Subcategories(id)
 );
@@ -61,6 +62,7 @@ CREATE TABLE IF NOT EXISTS Subscription (
 CREATE TABLE IF NOT EXISTS Sub_of (
 	sid INT NOT NULL,
 	cid INT NOT NULL,
+	PRIMARY KEY(sid, cid),
 	FOREIGN KEY (sid) REFERENCES Subcategories(id),
 	FOREIGN KEY (cid) REFERENCES Categories(id)
 );
@@ -69,6 +71,7 @@ CREATE TABLE IF NOT EXISTS Publish (
 	uid INT NOT NULL,
 	mid INT NOT NULL,
 	time INT NOT NULL,
+	PRIMARY KEY(uid, mid),
 	FOREIGN KEY (uid) REFERENCES Users(id),
 	FOREIGN KEY (mid) REFERENCES Messages(id)
 );
@@ -77,6 +80,7 @@ CREATE TABLE IF NOT EXISTS Published (
 	uid INT NOT NULL,
 	mid INT NOT NULL,
 	time INT NOT NULL,
+	PRIMARY KEY(uid, mid),
 	FOREIGN KEY (uid) REFERENCES Users(id),
 	FOREIGN KEY (mid) REFERENCES Archive(id)
 );
@@ -84,6 +88,7 @@ CREATE TABLE IF NOT EXISTS Published (
 CREATE TABLE IF NOT EXISTS Belong (
 	mid INT NOT NULL,
 	sid INT NOT NULL,
+	PRIMARY KEY(mid, sid),
 	FOREIGN KEY (mid) REFERENCES Messages(id),
 	FOREIGN KEY (sid) REFERENCES Subcategories(id)
 );
@@ -91,6 +96,7 @@ CREATE TABLE IF NOT EXISTS Belong (
 CREATE TABLE IF NOT EXISTS Belonged (
 	mid INT NOT NULL,
 	sid INT NOT NULL,
+	PRIMARY KEY(mid, sid),
 	FOREIGN KEY (mid) REFERENCES Archive(id),
 	FOREIGN KEY (sid) REFERENCES Subcategories(id)
 );
