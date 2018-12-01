@@ -19,5 +19,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="publisher">I am a publisher.</string>
+    <string name="publisher">I am a publisher</string>
+
+    <string name="publisher_mode">Publisher Mode</string>
+    <string name="delete_profile">Delete Profile</string>
+
+    <string name="location_search">Search for a new location</string>
 </resources>
