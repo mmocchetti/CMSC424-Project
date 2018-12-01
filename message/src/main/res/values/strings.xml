@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">AndriodMapApp424</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="put_latitude_here">Put Latitude Here</string>
-    <string name="put_longitude_here">Put Longitude here</string>
-    <string name="find">Find</string>
-</resources>
